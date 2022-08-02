@@ -1,9 +1,13 @@
 <app-categories></app-categories>
 <section class="wrapper">
     <mat-spinner *ngIf="isLoading"></mat-spinner>
-    <ul class="cats-list" *ngIf="!isLoading">
+    <ul class="cats-list" *ngIf="!isLoading && cats?.length">
         <li class="cats-list-item" *ngFor="let cat of cats">
             <app-card [item]="cat"></app-card>
         </li>
     </ul>
+</section>
+<section class="empty" *ngIf="!isLoading && !cats?.length">
+    <img src="https://freesvg.org/img/liftarn_Cat_silhouette.png" alt="">
+    <h1>There is no cats -_-</h1>
 </section>

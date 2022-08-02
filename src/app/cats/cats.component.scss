@@ -29,6 +29,17 @@
   }
 }
 
+.empty {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    
+    img {
+        max-height: 200px;
+    }
+}
+
 :host ::ng-deep {
   .mat-progress-spinner.mat-progress-spinner-indeterminate-animation[mode="indeterminate"]
     svg {

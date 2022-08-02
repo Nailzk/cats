@@ -6,6 +6,7 @@ import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header.component';
 import { MatInputModule } from '@angular/material/input';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { MatInputModule } from '@angular/material/input';
     MatFormFieldModule,
     MatAutocompleteModule,
     MatIconModule,
-    MatInputModule
+    MatInputModule,
+    MatButtonModule
   ],
   declarations: [HeaderComponent],
   exports: [HeaderComponent]
