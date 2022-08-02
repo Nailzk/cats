@@ -4,7 +4,7 @@
 
 export const environment = {
   production: false,
-  catsApiUrl: 'https://api.thecatapi.com/v1',
+  catsApiUrl: '/api',
   catsApiKey: '4abc212c-5124-4097-bb4e-30905dc12313'
 };
 

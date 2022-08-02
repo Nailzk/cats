@@ -7,6 +7,7 @@ import { MatIconModule } from '@angular/material/icon';
 import { MatSelectModule } from '@angular/material/select';
 import { RouterModule } from '@angular/router';
 import { CategoriesComponent } from './categories.component';
+import { MatButtonModule } from '@angular/material/button';
 
 @NgModule({
   imports: [
@@ -17,7 +18,8 @@ import { CategoriesComponent } from './categories.component';
     MatChipsModule,
     MatIconModule,
     MatFormFieldModule,
-    MatSelectModule
+    MatSelectModule,
+    MatButtonModule
   ],
   declarations: [CategoriesComponent],
   exports: [CategoriesComponent],
