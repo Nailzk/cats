@@ -3,7 +3,7 @@ const proxyConfig = [
   {
     context: "/api",
     target: "https://api.thecatapi.com/v1",
-    secure: false,
+    secure: true,
     changeOrigin: true,
     pathRewrite: { "^/api": "" },
   },
