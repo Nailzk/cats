@@ -1,0 +1,41 @@
+@import "/src/theme/theme-variables.scss";
+
+.wrapper {
+  padding: 30px;
+
+  .mat-progress-spinner {
+    width: 100vw !important;
+    height: 100vh !important;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+  }
+
+  .cats-list {
+    list-style: none;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, 240px);
+    justify-content: space-between;
+    gap: 20px;
+    padding: 0;
+
+    @media screen and(max-width: $breakpoint-570) {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+  }
+}
+
+:host ::ng-deep {
+  .mat-progress-spinner.mat-progress-spinner-indeterminate-animation[mode="indeterminate"]
+    svg {
+    width: 60px !important;
+    height: 60px !important;
+    position: relative;
+    top: 50%;
+    left: 50%;
+  }
+}

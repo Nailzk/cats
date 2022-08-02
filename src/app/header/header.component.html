@@ -1,3 +1,22 @@
-<p>
-  header works!
-</p>
+<header>
+  <h1 class="heading">Cats Finder</h1>
+  <mat-form-field class="example-full-width" appearance="fill">
+    <mat-label>Breed</mat-label>
+    <input
+      type="text"
+      placeholder="Pick one"
+      aria-label="Name"
+      matInput
+      [(ngModel)]="breed"
+      [matAutocomplete]="auto"
+    />
+    <button *ngIf="breed" matSuffix mat-icon-button aria-label="Clear" (click)="clearBreed()">
+      <mat-icon>close</mat-icon>
+    </button>
+    <mat-autocomplete autoActiveFirstOption #auto="matAutocomplete">
+      <mat-option *ngFor="let option of breadOptions" [value]="option" (onSelectionChange)="handleSelected($event)">
+        {{ option?.name }}
+      </mat-option>
+    </mat-autocomplete>
+  </mat-form-field>
+</header>

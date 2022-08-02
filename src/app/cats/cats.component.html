@@ -1,0 +1,9 @@
+<app-categories></app-categories>
+<section class="wrapper">
+    <mat-spinner *ngIf="isLoading"></mat-spinner>
+    <ul class="cats-list" *ngIf="!isLoading">
+        <li class="cats-list-item" *ngFor="let cat of cats">
+            <app-card [item]="cat"></app-card>
+        </li>
+    </ul>
+</section>
