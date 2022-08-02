@@ -5,6 +5,7 @@ import { MatAutocompleteModule } from '@angular/material/autocomplete';
 import { MatFormFieldModule } from '@angular/material/form-field';
 import { MatIconModule } from '@angular/material/icon';
 import { HeaderComponent } from './header.component';
+import { MatInputModule } from '@angular/material/input';
 
 @NgModule({
   imports: [
@@ -16,6 +17,7 @@ import { HeaderComponent } from './header.component';
     MatFormFieldModule,
     MatAutocompleteModule,
     MatIconModule,
+    MatInputModule
   ],
   declarations: [HeaderComponent],
   exports: [HeaderComponent]
